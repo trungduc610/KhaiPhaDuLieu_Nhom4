@@ -1,0 +1,24 @@
+BÁO CÁO ĐÁNH GIÁ HIỆU SUẤT MÔ HÌNH
+==================================================
+
+Độ chính xác tổng thể (Accuracy): 87.89%
+
+1. BẢNG BÁO CÁO CHI TIẾT (Classification Report):
+--------------------------------------------------
+              precision    recall  f1-score   support
+
+    Stay (0)       0.89      0.97      0.93      1233
+   Leave (1)       0.72      0.41      0.52       237
+
+    accuracy                           0.88      1470
+   macro avg       0.81      0.69      0.72      1470
+weighted avg       0.87      0.88      0.86      1470
+
+
+2. MA TRẬN NHẦM LẪN (Confusion Matrix):
+--------------------------------------------------
+                 Dự đoán Stay(0) | Dự đoán Leave(1)
+Thực tế Stay(0) | 1196            | 37
+Thực tế Leave(1)| 141             | 96
+
+(Giải thích Ma trận: Trục ngang là kết quả dự báo, Trục dọc là dữ liệu thực tế)
