@@ -241,9 +241,12 @@ st.dataframe(display_df, use_container_width=True, hide_index=True, height=400)
 section_header("⚙️ Thao tác")
 col_sel, col_edit, col_del = st.columns([3, 1, 1])
 with col_sel:
-    emp_options = filtered.apply(
-        lambda r: f"{r['TenNhanVien']} (#{int(r['EmployeeNumber'])})", axis=1
-    ).tolist()
+    if filtered.empty:
+        emp_options = []
+    else:
+        emp_options = filtered.apply(
+            lambda r: f"{r['TenNhanVien']} (#{int(r['EmployeeNumber'])})", axis=1
+        ).tolist()
     if emp_options:
         selected_label = st.selectbox("Chọn nhân viên", emp_options, key='nv_select')
         sel_idx = emp_options.index(selected_label)
