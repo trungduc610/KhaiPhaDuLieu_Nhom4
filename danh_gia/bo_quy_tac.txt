@@ -1,0 +1,193 @@
+======================================================================
+  BỘ QUY TẮC CÂY QUYẾT ĐỊNH CART - DỰ ĐOÁN NGHỈ VIỆC
+======================================================================
+
+Số lá (leaves): 61
+Độ sâu cây (depth): 8
+Số features: 47
+
+----------------------------------------------------------------------
+CHI TIẾT QUY TẮC:
+----------------------------------------------------------------------
+
+|--- TotalWorkingYears <= 2.50
+|   |--- JobRole_Research Scientist <= 0.50
+|   |   |--- StockOptionLevel <= 0.50
+|   |   |   |--- YearsWithCurrManager <= 1.50
+|   |   |   |   |--- DailyRate <= 1034.50
+|   |   |   |   |   |--- MonthlyRate <= 16086.50
+|   |   |   |   |   |   |--- weights: [0.60, 21.66] class: 1
+|   |   |   |   |   |--- MonthlyRate >  16086.50
+|   |   |   |   |   |   |--- weights: [0.00, 34.04] class: 1
+|   |   |   |   |--- DailyRate >  1034.50
+|   |   |   |   |   |--- weights: [2.39, 21.66] class: 1
+|   |   |   |--- YearsWithCurrManager >  1.50
+|   |   |   |   |--- weights: [3.58, 18.57] class: 1
+|   |   |--- StockOptionLevel >  0.50
+|   |   |   |--- AgeGroup_31-40 <= 0.50
+|   |   |   |   |--- HourlyRate <= 59.00
+|   |   |   |   |   |--- weights: [0.60, 21.66] class: 1
+|   |   |   |   |--- HourlyRate >  59.00
+|   |   |   |   |   |--- weights: [2.98, 9.28] class: 1
+|   |   |   |--- AgeGroup_31-40 >  0.50
+|   |   |   |   |--- weights: [5.37, 6.19] class: 1
+|   |--- JobRole_Research Scientist >  0.50
+|   |   |--- OverTime <= 0.50
+|   |   |   |--- HourlyRate <= 67.50
+|   |   |   |   |--- weights: [4.17, 3.09] class: 0
+|   |   |   |--- HourlyRate >  67.50
+|   |   |   |   |--- weights: [6.56, 0.00] class: 0
+|   |   |--- OverTime >  0.50
+|   |   |   |--- weights: [1.79, 15.47] class: 1
+|--- TotalWorkingYears >  2.50
+|   |--- OverTime <= 0.50
+|   |   |--- NumCompaniesWorked <= 4.50
+|   |   |   |--- WorkLifeBalance <= 1.50
+|   |   |   |   |--- PercentSalaryHike <= 17.50
+|   |   |   |   |   |--- MonthlyIncome <= 4269.50
+|   |   |   |   |   |   |--- weights: [2.98, 15.47] class: 1
+|   |   |   |   |   |--- MonthlyIncome >  4269.50
+|   |   |   |   |   |   |--- weights: [4.77, 3.09] class: 0
+|   |   |   |   |--- PercentSalaryHike >  17.50
+|   |   |   |   |   |--- weights: [5.37, 0.00] class: 0
+|   |   |   |--- WorkLifeBalance >  1.50
+|   |   |   |   |--- JobRole_Sales Representative <= 0.50
+|   |   |   |   |   |--- RelationshipSatisfaction <= 1.50
+|   |   |   |   |   |   |--- YearsWithCurrManager <= 7.50
+|   |   |   |   |   |   |   |--- MonthlyIncome <= 7443.50
+|   |   |   |   |   |   |   |   |--- weights: [35.18, 15.47] class: 0
+|   |   |   |   |   |   |   |--- MonthlyIncome >  7443.50
+|   |   |   |   |   |   |   |   |--- weights: [3.58, 15.47] class: 1
+|   |   |   |   |   |   |--- YearsWithCurrManager >  7.50
+|   |   |   |   |   |   |   |--- weights: [19.08, 0.00] class: 0
+|   |   |   |   |   |--- RelationshipSatisfaction >  1.50
+|   |   |   |   |   |   |--- DailyRate <= 308.00
+|   |   |   |   |   |   |   |--- DailyRate <= 233.00
+|   |   |   |   |   |   |   |   |--- weights: [25.64, 6.19] class: 0
+|   |   |   |   |   |   |   |--- DailyRate >  233.00
+|   |   |   |   |   |   |   |   |--- weights: [7.75, 15.47] class: 1
+|   |   |   |   |   |   |--- DailyRate >  308.00
+|   |   |   |   |   |   |   |--- YearsAtCompany <= 8.50
+|   |   |   |   |   |   |   |   |--- weights: [135.37, 3.09] class: 0
+|   |   |   |   |   |   |   |--- YearsAtCompany >  8.50
+|   |   |   |   |   |   |   |   |--- weights: [76.93, 21.66] class: 0
+|   |   |   |   |--- JobRole_Sales Representative >  0.50
+|   |   |   |   |   |--- TrainingTimesLastYear <= 2.50
+|   |   |   |   |   |   |--- weights: [4.77, 0.00] class: 0
+|   |   |   |   |   |--- TrainingTimesLastYear >  2.50
+|   |   |   |   |   |   |--- weights: [4.17, 12.38] class: 1
+|   |   |--- NumCompaniesWorked >  4.50
+|   |   |   |--- TotalWorkingYears <= 17.50
+|   |   |   |   |--- StockOptionLevel <= 0.50
+|   |   |   |   |   |--- JobInvolvement <= 2.50
+|   |   |   |   |   |   |--- JobSatisfaction <= 1.50
+|   |   |   |   |   |   |   |--- weights: [0.60, 21.66] class: 1
+|   |   |   |   |   |   |--- JobSatisfaction >  1.50
+|   |   |   |   |   |   |   |--- HourlyRate <= 69.00
+|   |   |   |   |   |   |   |   |--- weights: [3.58, 6.19] class: 1
+|   |   |   |   |   |   |   |--- HourlyRate >  69.00
+|   |   |   |   |   |   |   |   |--- weights: [2.39, 12.38] class: 1
+|   |   |   |   |   |--- JobInvolvement >  2.50
+|   |   |   |   |   |   |--- HourlyRate <= 69.50
+|   |   |   |   |   |   |   |--- Education <= 2.50
+|   |   |   |   |   |   |   |   |--- weights: [5.37, 3.09] class: 0
+|   |   |   |   |   |   |   |--- Education >  2.50
+|   |   |   |   |   |   |   |   |--- weights: [2.98, 15.47] class: 1
+|   |   |   |   |   |   |--- HourlyRate >  69.50
+|   |   |   |   |   |   |   |--- weights: [5.37, 0.00] class: 0
+|   |   |   |   |--- StockOptionLevel >  0.50
+|   |   |   |   |   |--- PercentSalaryHike <= 13.50
+|   |   |   |   |   |   |--- JobRole_Laboratory Technician <= 0.50
+|   |   |   |   |   |   |   |--- YearsWithCurrManager <= 2.50
+|   |   |   |   |   |   |   |   |--- weights: [3.58, 9.28] class: 1
+|   |   |   |   |   |   |   |--- YearsWithCurrManager >  2.50
+|   |   |   |   |   |   |   |   |--- weights: [8.95, 0.00] class: 0
+|   |   |   |   |   |   |--- JobRole_Laboratory Technician >  0.50
+|   |   |   |   |   |   |   |--- weights: [2.39, 12.38] class: 1
+|   |   |   |   |   |--- PercentSalaryHike >  13.50
+|   |   |   |   |   |   |--- DistanceGroup_Trung binh (5-15km) <= 0.50
+|   |   |   |   |   |   |   |--- weights: [16.70, 0.00] class: 0
+|   |   |   |   |   |   |--- DistanceGroup_Trung binh (5-15km) >  0.50
+|   |   |   |   |   |   |   |--- MonthlyIncome <= 4806.50
+|   |   |   |   |   |   |   |   |--- weights: [6.56, 0.00] class: 0
+|   |   |   |   |   |   |   |--- MonthlyIncome >  4806.50
+|   |   |   |   |   |   |   |   |--- weights: [4.77, 6.19] class: 1
+|   |   |   |--- TotalWorkingYears >  17.50
+|   |   |   |   |--- YearsSinceLastPromotion <= 9.50
+|   |   |   |   |   |--- AgeGroup_51+ <= 0.50
+|   |   |   |   |   |   |--- weights: [17.29, 0.00] class: 0
+|   |   |   |   |   |--- AgeGroup_51+ >  0.50
+|   |   |   |   |   |   |--- weights: [8.35, 0.00] class: 0
+|   |   |   |   |--- YearsSinceLastPromotion >  9.50
+|   |   |   |   |   |--- weights: [4.17, 6.19] class: 1
+|   |--- OverTime >  0.50
+|   |   |--- JobLevel <= 1.50
+|   |   |   |--- NumCompaniesWorked <= 0.50
+|   |   |   |   |--- MonthlyRate <= 8688.00
+|   |   |   |   |   |--- weights: [4.77, 0.00] class: 0
+|   |   |   |   |--- MonthlyRate >  8688.00
+|   |   |   |   |   |--- weights: [4.17, 3.09] class: 0
+|   |   |   |--- NumCompaniesWorked >  0.50
+|   |   |   |   |--- MonthlyIncome <= 2476.00
+|   |   |   |   |   |--- DailyRate <= 1027.00
+|   |   |   |   |   |   |--- EnvironmentSatisfaction <= 2.50
+|   |   |   |   |   |   |   |--- weights: [0.60, 21.66] class: 1
+|   |   |   |   |   |   |--- EnvironmentSatisfaction >  2.50
+|   |   |   |   |   |   |   |--- weights: [0.00, 37.14] class: 1
+|   |   |   |   |   |--- DailyRate >  1027.00
+|   |   |   |   |   |   |--- weights: [2.98, 12.38] class: 1
+|   |   |   |   |--- MonthlyIncome >  2476.00
+|   |   |   |   |   |--- MonthlyIncome <= 2880.50
+|   |   |   |   |   |   |--- weights: [7.75, 6.19] class: 0
+|   |   |   |   |   |--- MonthlyIncome >  2880.50
+|   |   |   |   |   |   |--- MonthlyRate <= 16605.50
+|   |   |   |   |   |   |   |--- NumCompaniesWorked <= 2.00
+|   |   |   |   |   |   |   |   |--- weights: [2.39, 15.47] class: 1
+|   |   |   |   |   |   |   |--- NumCompaniesWorked >  2.00
+|   |   |   |   |   |   |   |   |--- weights: [5.37, 0.00] class: 0
+|   |   |   |   |   |   |--- MonthlyRate >  16605.50
+|   |   |   |   |   |   |   |--- weights: [1.79, 24.76] class: 1
+|   |   |--- JobLevel >  1.50
+|   |   |   |--- StockOptionLevel <= 0.50
+|   |   |   |   |--- Department_Sales <= 0.50
+|   |   |   |   |   |--- NumCompaniesWorked <= 6.50
+|   |   |   |   |   |   |--- TotalWorkingYears <= 9.50
+|   |   |   |   |   |   |   |--- weights: [4.17, 9.28] class: 1
+|   |   |   |   |   |   |--- TotalWorkingYears >  9.50
+|   |   |   |   |   |   |   |--- RelationshipSatisfaction <= 2.50
+|   |   |   |   |   |   |   |   |--- weights: [7.16, 0.00] class: 0
+|   |   |   |   |   |   |   |--- RelationshipSatisfaction >  2.50
+|   |   |   |   |   |   |   |   |--- weights: [13.72, 0.00] class: 0
+|   |   |   |   |   |--- NumCompaniesWorked >  6.50
+|   |   |   |   |   |   |--- weights: [2.39, 15.47] class: 1
+|   |   |   |   |--- Department_Sales >  0.50
+|   |   |   |   |   |--- MonthlyIncome <= 5233.00
+|   |   |   |   |   |   |--- weights: [4.17, 3.09] class: 0
+|   |   |   |   |   |--- MonthlyIncome >  5233.00
+|   |   |   |   |   |   |--- WorkLifeBalance <= 2.50
+|   |   |   |   |   |   |   |--- weights: [1.19, 34.04] class: 1
+|   |   |   |   |   |   |--- WorkLifeBalance >  2.50
+|   |   |   |   |   |   |   |--- YearsSinceLastPromotion <= 0.50
+|   |   |   |   |   |   |   |   |--- weights: [3.58, 6.19] class: 1
+|   |   |   |   |   |   |   |--- YearsSinceLastPromotion >  0.50
+|   |   |   |   |   |   |   |   |--- weights: [2.39, 15.47] class: 1
+|   |   |   |--- StockOptionLevel >  0.50
+|   |   |   |   |--- DailyRate <= 766.50
+|   |   |   |   |   |--- DailyRate <= 403.50
+|   |   |   |   |   |   |--- weights: [15.51, 0.00] class: 0
+|   |   |   |   |   |--- DailyRate >  403.50
+|   |   |   |   |   |   |--- YearsInCurrentRole <= 7.50
+|   |   |   |   |   |   |   |--- Gender <= 0.50
+|   |   |   |   |   |   |   |   |--- weights: [8.35, 6.19] class: 0
+|   |   |   |   |   |   |   |--- Gender >  0.50
+|   |   |   |   |   |   |   |   |--- weights: [4.17, 21.66] class: 1
+|   |   |   |   |   |   |--- YearsInCurrentRole >  7.50
+|   |   |   |   |   |   |   |--- weights: [5.37, 0.00] class: 0
+|   |   |   |   |--- DailyRate >  766.50
+|   |   |   |   |   |--- NumCompaniesWorked <= 6.00
+|   |   |   |   |   |   |--- Education <= 1.50
+|   |   |   |   |   |   |   |--- weights: [4.77, 0.00] class: 0
+|   |   |   |   |   |   |--- Education >  1.50
+|   |   |   |   |   |   |   |--- weights: [30.41, 0.00] class: 0
+|   |   |   |   |   |--- NumCompaniesWorked >  6.00
+|   |   |   |   |   |   |--- weights: [4.17, 3.09] class: 0

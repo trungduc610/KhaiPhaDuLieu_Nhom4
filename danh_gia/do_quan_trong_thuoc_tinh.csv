@@ -1,0 +1,48 @@
+﻿Thu_tu,Thuoc_tinh,Do_quan_trong
+1,TotalWorkingYears,0.19206826854352418
+2,OverTime,0.1396735768611608
+3,NumCompaniesWorked,0.1158300962404582
+4,DailyRate,0.08651154268343059
+5,StockOptionLevel,0.07631151239961363
+6,MonthlyIncome,0.059710515455975575
+7,JobLevel,0.044788208081996066
+8,YearsWithCurrManager,0.03394525032447399
+9,PercentSalaryHike,0.029630097821603325
+10,WorkLifeBalance,0.024904812851747532
+11,Department_Sales,0.022547358577099372
+12,HourlyRate,0.01916510460883073
+13,YearsSinceLastPromotion,0.016911812473541767
+14,JobRole_Sales Representative,0.016352377233703815
+15,RelationshipSatisfaction,0.013920380499629728
+16,JobRole_Research Scientist,0.013019008498037435
+17,YearsInCurrentRole,0.012817225927580991
+18,YearsAtCompany,0.012755013393414977
+19,TrainingTimesLastYear,0.011775127262499033
+20,Gender,0.009009144175839572
+21,JobInvolvement,0.008800831818613684
+22,JobRole_Laboratory Technician,0.008525351675592194
+23,MonthlyRate,0.008021253842276758
+24,Education,0.007370770775485703
+25,AgeGroup_31-40,0.006407703758235662
+26,DistanceGroup_Trung binh (5-15km),0.006066571503094171
+27,JobSatisfaction,0.003104289351159557
+28,EnvironmentSatisfaction,5.679336138068399e-05
+29,AgeGroup_51+,9.711748200750461e-17
+30,PerformanceRating,0.0
+31,BusinessTravel_Travel_Frequently,0.0
+32,EducationField_Other,0.0
+33,EducationField_Medical,0.0
+34,EducationField_Marketing,0.0
+35,EducationField_Life Sciences,0.0
+36,Department_Research & Development,0.0
+37,BusinessTravel_Travel_Rarely,0.0
+38,JobRole_Human Resources,0.0
+39,EducationField_Technical Degree,0.0
+40,JobRole_Sales Executive,0.0
+41,JobRole_Research Director,0.0
+42,JobRole_Manufacturing Director,0.0
+43,JobRole_Manager,0.0
+44,MaritalStatus_Single,0.0
+45,MaritalStatus_Married,0.0
+46,AgeGroup_41-50,0.0
+47,DistanceGroup_Xa (>15km),0.0
